@@ -1,51 +1,33 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
- */
+import React from "react"
+import { Link } from "gatsby"
+import ThemeToggle from "./ThemeToggle"
+import Search from "../components/Search"
 
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import "./layout.css"
-
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+export default function Layout({ children }) {
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
-    </>
+    <div style={{ maxWidth: "800px", margin: "40px auto" }}>
+      <header className="navbar">
+        <div className="navbar-left">
+          <a href="/" className="navbar-logo">
+            My Gatsby Blog
+          </a>
+        </div>
+
+        <div className="navbar-center">
+          <Search />
+        </div>
+
+        <div className="navbar-right">
+          <ThemeToggle />
+        </div>
+      </header>
+
+      <main>{children}</main>
+
+      <footer>
+        <hr />
+        <p>© {new Date().getFullYear()}</p>
+      </footer>
+    </div>
   )
 }
-
-export default Layout
