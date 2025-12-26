@@ -5,20 +5,16 @@
   "version": "1.0.0",
   "author": "Tirth Chhatrala",
   "license": "MIT",
-
   "engines": {
     "node": "18.x"
   },
-
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\""
+    "clean": "gatsby clean"
   },
-
   "dependencies": {
     "gatsby": "^5.14.6",
     "gatsby-plugin-feed": "^5.15.0",
@@ -32,27 +28,5 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0"
-  },
-
-  "devDependencies": {
-    "prettier": "^2.8.8"
-  },
-
-  "keywords": [
-    "gatsby",
-    "gatsby-blog",
-    "static-site",
-    "markdown",
-    "seo",
-    "react"
-  ],
-
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/TirthChhatrala/GatsbyPress.git"
-  },
-
-  "bugs": {
-    "url": "https://github.com/TirthChhatrala/GatsbyPress/issues"
   }
 }
