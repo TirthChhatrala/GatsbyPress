@@ -5,9 +5,11 @@
   "version": "1.0.0",
   "author": "Tirth Chhatrala",
   "license": "MIT",
+
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   },
+
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
@@ -15,6 +17,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
+
   "dependencies": {
     "gatsby": "^5.14.6",
     "gatsby-plugin-feed": "^5.15.0",
