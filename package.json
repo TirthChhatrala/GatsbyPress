@@ -1,9 +1,24 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsbypress",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "A modern Gatsby blog with Markdown, SEO, pagination, search, dark mode, tags, RSS, and custom styling.",
+  "version": "1.0.0",
+  "author": "Tirth Chhatrala",
+  "license": "MIT",
+
+  "engines": {
+    "node": "18.x"
+  },
+
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\""
+  },
+
   "dependencies": {
     "gatsby": "^5.14.6",
     "gatsby-plugin-feed": "^5.15.0",
@@ -18,27 +33,26 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0"
   },
+
   "devDependencies": {
     "prettier": "^2.8.8"
   },
+
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "gatsby-blog",
+    "static-site",
+    "markdown",
+    "seo",
+    "react"
   ],
-  "license": "0BSD",
-  "scripts": {
-    "develop": "set GATSBY_EXPERIMENTAL_LMDB_STORE=false && gatsby develop",
-    "build": "set GATSBY_EXPERIMENTAL_LMDB_STORE=false && gatsby build",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
+
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/TirthChhatrala/GatsbyPress.git"
   },
+
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/TirthChhatrala/GatsbyPress/issues"
   }
 }
